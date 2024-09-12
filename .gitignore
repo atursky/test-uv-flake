@@ -42,3 +42,7 @@ result
 # Ignore Python virtual environment
 env/
 venv/
+
+# Ignore direnv configuration files
+.envrc
+.direnv/
