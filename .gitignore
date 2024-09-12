@@ -1,0 +1,44 @@
+# Ignore the .venv directory created by uv
+.venv/
+
+# Ignore Python bytecode files
+__pycache__/
+*.py[cod]
+
+# Ignore Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Ignore Nix build artifacts
+result
+*.drv
+*.lock
+*.log
+
+# Ignore Nix store paths
+/nix/store/
+
+# Ignore Nix garbage collection roots
+/nix/var/nix/gcroots/auto/
+
+# Ignore Nix database
+/nix/var/nix/db/
+
+# Ignore Nix logs
+/nix/var/log/nix/drvs/
+
+# Ignore Nix profiles
+/nix/var/nix/profiles/
+
+# Ignore Nix user profiles
+~/.nix-profile/
+~/.nix-defexpr/
+~/.nix-channels/
+
+# Ignore VSCode settings and extensions
+.vscode/
+.vscode-server/
+.vscode-test/
+
+# Ignore Python virtual environment
+env/
+venv/

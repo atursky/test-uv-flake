@@ -34,6 +34,14 @@
             # Alias pip to use uv for improved performance
             alias pip="uv pip"
             echo "uv pip environment ready"
+
+            # Check if requirements.txt exists and install it
+            if [ -f "requirements.txt" ]; then
+              echo "requirements.txt found, installing..."
+              pip install -r requirements.txt
+            else
+              echo "requirements.txt not found, skipping installation."
+            fi
           '';
         };
       }
